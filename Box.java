@@ -54,6 +54,9 @@ public class Box {
 	*/
 	@Override
 	public int hashCode(){
-		return (width + height + depth) * 31;  // blochs standard recepie add all important fields and multiply by 31 
+		int result = Integer.hashCode(width);
+		result = 31 * result + Integer.hashCode(height);
+		result = 31 * result + Integer.hashCode(depth);
+		return result;  // blochs standard recepie add all important fields and multiply by 31 
 	}
 }
