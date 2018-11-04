@@ -44,9 +44,9 @@ public class Box {
 			return false; 
 		}
 
-		other = (Box) other; // cast other into a Box object 
+		Box otherBox = (Box) other; // cast other into a Box object 
 		// check if other box has same dimentions as this box 
-		return other.width == this.width && other.height == this.height && other.depth == this.depth;
+		return otherBox.width == this.width && otherBox.height == this.height && otherBox.depth == this.depth;
 
 	}
 	/**
