@@ -30,8 +30,8 @@ public class BoxTest{
 
     @DataPoints public static Box[] boxes = {
             new Box(),
-            new Box(6,9),
-            new Box(2,4),
+            new Box(6,9,2),
+            new Box(2,4,3),
             null
     };
 
