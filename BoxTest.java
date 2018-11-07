@@ -22,7 +22,8 @@ import org.junit.experimental.theories.Theory;
 * It was not necessary to include tests for the hashcode since the equals method was wrong 
 * Contributions: 
 *  Aster Bodden: Class Skeletons, Box equals() and hashcode(). 
-*  Abdullah Alaqee:
+*  Abdullah Alaqee: MatchBox equals() and hashcode().
+ *  The tests are recycled from assignment 8.
 */
 
 

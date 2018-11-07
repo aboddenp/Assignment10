@@ -26,13 +26,20 @@ public class MatchBox extends Box {
 	*/
 	public String getName() { return name; }
 
-	@Override
+
 	/**
 	* @param other object to compare to 
 	* @return true if other box has the same dimentions and depth and name 
 	*/
+	@Override
 	public boolean equals(Object other){
-		return false; // need to implement using regular recepie 
+		if (other == this) return true;
+
+		if (!(other instanceof MatchBox)) return false;
+
+		MatchBox o = (MatchBox) other;
+
+		return super.equals(o) && Objects.equals(this.name, o.name);
 	}
 
 	/**
@@ -40,7 +47,6 @@ public class MatchBox extends Box {
 	*/
 	@Override
 	public int hashCode(){
-		return 0; // need to implement using bloch standard recepie ... you can call super.hash and add the hash for the string *31
+		return 31 * super.hashCode() + Objects.hashCode(this.name);
 	}
-
 }
