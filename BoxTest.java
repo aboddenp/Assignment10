@@ -24,6 +24,13 @@ import org.junit.experimental.theories.Theory;
 *  Aster Bodden: Class Skeletons, Box equals() and hashcode(). 
 *  Abdullah Alaqee: MatchBox equals() and hashcode().
  *  The tests are recycled from assignment 8.
+ *
+ *  After running the tests, we found that the symmetry property was violated.
+ *  Box.equals(MatchBox) will not see the values in MatchBox, but MatchBox.equals(Box) will.
+ *  So, if a MatchBox instance had anything other that null in the name field, the symmetry will be violated.
+ *
+ *  Bloch had another recipie for equals that violated the transitivity property.
+ *
 */
 
 
