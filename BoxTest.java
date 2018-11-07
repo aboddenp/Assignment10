@@ -18,9 +18,10 @@ import org.junit.experimental.theories.Theory;
 * @author Aster Bodden
 * @author Abdullah Alaqeel
 * By making general Junit Theories for the three relevant properties of the equals() contract in the Object class
-* Running these test will show that 
+* Running these test will show that **** need explanation on why equals is wrong 
+* It was not necessary to include tests for the hashcode since the equals method was wrong 
 * Contributions: 
-*  Aster Bodden: 
+*  Aster Bodden: Class Skeletons, Box equals() and hashcode(). 
 *  Abdullah Alaqee:
 */
 

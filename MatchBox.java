@@ -32,7 +32,7 @@ public class MatchBox extends Box {
 	* @return true if other box has the same dimentions and depth and name 
 	*/
 	public boolean equals(Object other){
-		return false; // need to implement 
+		return false; // need to implement using regular recepie 
 	}
 
 	/**
@@ -40,7 +40,7 @@ public class MatchBox extends Box {
 	*/
 	@Override
 	public int hashCode(){
-		return 0; // need to implement 
+		return 0; // need to implement using bloch standard recepie ... you can call super.hash and add the hash for the string *31
 	}
 
 }
